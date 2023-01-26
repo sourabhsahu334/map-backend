@@ -13,7 +13,7 @@ app.use(cors({
 const API_KEY = '013e7d218339a551f92048bc2fc624ff';
 const CITIES = ['New York', 'Los Angeles','Bhopal', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose', 'Austin', 'Jacksonville', 'Fort Worth', 'Columbus', 'San Francisco', 'Charlotte', 'Indianapolis', 'Seattle', 'Denver', 'Washington', 'Boston', 'El Paso', 'Nashville', 'Detroit', 'Portland', 'Memphis', 'Oklahoma City', 'Las Vegas', 'Louisville', 'Baltimore', 'Milwaukee'];
 
-app.get(`/weather/:pg`, (req, res) => {
+app.get(`/weather`, (req, res) => {
     let start=0;
     let index=parseInt(req.params.pg);
     if (index<2){
